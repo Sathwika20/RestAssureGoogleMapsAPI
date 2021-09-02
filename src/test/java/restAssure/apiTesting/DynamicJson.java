@@ -24,7 +24,6 @@ public class DynamicJson {
         System.out.println(id);
 
     }
-    //parameterised testing with multiple data sets
     @DataProvider(name = "BooksData")
     public Object[][] getData(){
         return new Object[][] {{"jsxnk","8765"},{"skjdh","9876"},{"sakjjh","98765"}};
