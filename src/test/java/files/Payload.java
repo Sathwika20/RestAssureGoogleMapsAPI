@@ -1,4 +1,4 @@
-package restAssure.apiTesting;
+package files;
 
 public class Payload {
     public static String addPlace(){
@@ -69,6 +69,16 @@ public class Payload {
                 "}\n" +
                 "\n";
         return courses;
+    }
+    public static String addBook(String isbn, String aisle){
+        String books = "{\n" +
+                "\n" +
+                "\"name\":\"Learn Appium Automation with Java\",\n" +
+                "\"isbn\":\""+isbn+"\",\n" +
+                "\"aisle\":\""+aisle+"\",\n" +
+                "\"author\":\"John foe\"\n" +
+                "}\n";
+        return books;
     }
 
 }
