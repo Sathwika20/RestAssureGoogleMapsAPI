@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 public class SumValidation {
     @Test
     public void sumOfAllCourses(){
-        JsonPath js = new JsonPath(Utility.courseDetails());
+        JsonPath js = new JsonPath(Payload.courseDetails());
         int count = js.getInt("courses.size()");
         int sum = 0;
         for (int i=0; i<count; i++){

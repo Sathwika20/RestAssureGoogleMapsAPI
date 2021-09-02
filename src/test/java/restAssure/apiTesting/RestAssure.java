@@ -18,7 +18,7 @@ public class RestAssure {
                     .accept(ContentType.JSON)
                     .queryParam("key", "qaclick123")
                     .header("Content-Type", "application/json")
-                    .body(Utility.addPlace())
+                    .body(Payload.addPlace())
                     .when().post("maps/api/place/add/json?key=qaclick123")
                     .then().assertThat().statusCode(200).body("scope", equalTo("APP")).extract()
                     .response().asString();

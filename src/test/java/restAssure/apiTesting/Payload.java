@@ -1,6 +1,6 @@
 package restAssure.apiTesting;
 
-public class Utility {
+public class Payload {
     public static String addPlace(){
 
      String places = "{\n" +

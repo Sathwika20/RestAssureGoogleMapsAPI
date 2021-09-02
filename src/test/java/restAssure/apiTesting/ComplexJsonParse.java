@@ -7,7 +7,7 @@ public class ComplexJsonParse {
 
     @Test
     public static void complexJsonParse() {
-        JsonPath js = new JsonPath(Utility.courseDetails());
+        JsonPath js = new JsonPath(Payload.courseDetails());
 
         //print all the courses
         int count = js.getInt("courses.size()");
